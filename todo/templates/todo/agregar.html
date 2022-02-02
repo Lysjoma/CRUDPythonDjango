@@ -1,0 +1,18 @@
+{% extends 'todo/layout.html' %}
+
+{% block content %}
+<div class="container text-center">
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+
+          {{ form }}
+          
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success btn-primary btn-sm">Agregar</button>
+      </form>
+</div>
+
+
+{% endblock %}
